@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh7ouqqaobrok"]
+
+[ext_resource type="Script" path="res://scripts/label.gd" id="1_6alt2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2ncf3"]
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[node name="Hud" type="Node3D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "DIAMONDS: X"
+label_settings = SubResource("LabelSettings_2ncf3")
+script = ExtResource("1_6alt2")

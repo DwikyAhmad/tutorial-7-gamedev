@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://faj3lcujj014"]
+
+[ext_resource type="PackedScene" uid="uid://c7jqc1ubbxhmy" path="res://scenes/Player.tscn" id="1_08l33"]
+[ext_resource type="PackedScene" uid="uid://38gurwk0s72q" path="res://scenes/World 1.tscn" id="1_sayfd"]
+[ext_resource type="PackedScene" uid="uid://enjgr1e0hi50" path="res://scenes/ObjLamp.tscn" id="3_jpbjj"]
+[ext_resource type="PackedScene" uid="uid://dhbsxdu3b8mga" path="res://scenes/AreaTrigger.tscn" id="4_ouuov"]
+[ext_resource type="PackedScene" uid="uid://cky2siwfmxql1" path="res://scenes/AreaTriggerBox.tscn" id="5_yonsb"]
+
+[node name="Level 1" type="Node3D"]
+transform = Transform3D(0.781636, 0, 0, 0, 0.781636, 0, 0, 0, 0.781636, 0.493286, -0.564209, -1.14954)
+
+[node name="World 1" parent="." instance=ExtResource("1_sayfd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.175913, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.255, 10.5301, 7.27783)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.255, 10.6025, -7.67505)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="ObjLamp" parent="." instance=ExtResource("3_jpbjj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.34415, 2.76693, 17.1549)
+
+[node name="Area Trigger" parent="." instance=ExtResource("4_ouuov")]
+transform = Transform3D(9.70349, 0, 0, 0, 0.753239, 0, 0, 0, 4.82799, 0.109985, -0.311714, 17.6572)
+sceneName = "WinScreen"
+
+[node name="Player" parent="." instance=ExtResource("1_08l33")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.627442, 0.834829, -5.06678)
+
+[node name="Area Trigger2" parent="." instance=ExtResource("5_yonsb")]
+transform = Transform3D(8.75694, 0, 0, 0, 0.986549, 0, 0, 0, 15.7641, -0.212891, -2.72707, 6.5048)

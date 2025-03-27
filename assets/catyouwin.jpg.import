@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxkmwk6kovf3"
-path.s3tc="res://.godot/imported/Keanu.png-7f692693bdaddec840dd1d2f3405b609.s3tc.ctex"
+uid="uid://ds1gjjj55fcx1"
+path.s3tc="res://.godot/imported/catyouwin.jpg-74f735f9b41c8ec5df55f5d4a3ee8afe.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Keanu.png"
-dest_files=["res://.godot/imported/Keanu.png-7f692693bdaddec840dd1d2f3405b609.s3tc.ctex"]
+source_file="res://assets/catyouwin.jpg"
+dest_files=["res://.godot/imported/catyouwin.jpg-74f735f9b41c8ec5df55f5d4a3ee8afe.s3tc.ctex"]
 
 [params]
 

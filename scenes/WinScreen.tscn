@@ -1,0 +1,112 @@
+[gd_scene load_steps=8 format=3 uid="uid://1danrppcoh41"]
+
+[ext_resource type="PackedScene" uid="uid://enjgr1e0hi50" path="res://scenes/ObjLamp.tscn" id="2_cshrj"]
+[ext_resource type="PackedScene" uid="uid://dhbsxdu3b8mga" path="res://scenes/AreaTrigger.tscn" id="3_rili7"]
+[ext_resource type="PackedScene" uid="uid://c7jqc1ubbxhmy" path="res://scenes/Player.tscn" id="4_vdhy5"]
+[ext_resource type="PackedScene" uid="uid://cky2siwfmxql1" path="res://scenes/AreaTriggerBox.tscn" id="5_er6t4"]
+[ext_resource type="PackedScene" uid="uid://ci1jpqvmtk5i1" path="res://scenes/World 2.tscn" id="5_i2qxl"]
+[ext_resource type="PackedScene" uid="uid://cok1j15rot8n1" path="res://scenes/Item.tscn" id="6_h161u"]
+[ext_resource type="PackedScene" uid="uid://bh7ouqqaobrok" path="res://scenes/HUD.tscn" id="7_wsq5c"]
+
+[node name="Win Screen" type="Node3D"]
+transform = Transform3D(0.781636, 0, 0, 0, 0.781636, 0, 0, 0, 0.781636, 0.493286, -0.564209, -1.14954)
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, -12.4552, 10.5301, 28.7308)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="ObjLamp4" parent="Lights" instance=ExtResource("2_cshrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9344, 2.76693, 17.3603)
+
+[node name="ObjLamp3" parent="Lights" instance=ExtResource("2_cshrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9344, 2.76693, -1.76435)
+
+[node name="ObjLamp2" parent="Lights" instance=ExtResource("2_cshrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9344, 2.76693, -20.5761)
+
+[node name="ObjLamp6" parent="Lights" instance=ExtResource("2_cshrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7767, 2.76693, 16.6039)
+
+[node name="ObjLamp5" parent="Lights" instance=ExtResource("2_cshrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7767, 2.76693, -2.26176)
+
+[node name="ObjLamp" parent="Lights" instance=ExtResource("2_cshrj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7767, 2.76693, -20.5761)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, -12.5329, 10.6025, -7.67505)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, -12.1653, 10.5301, 7.27783)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 16.9211, 10.5301, 7.27783)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 1.47496, 10.5301, 7.27783)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 1.47496, 10.5301, 25.3404)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 16.2878, 10.5301, 31.2927)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 17.8116, 10.5301, -12.3965)
+light_energy = 10.0
+omni_range = 15.986
+
+[node name="Items" type="Node3D" parent="."]
+
+[node name="Item" parent="Items" instance=ExtResource("6_h161u")]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, -0.55774, 0.82791, 7.26421)
+
+[node name="Item2" parent="Items" instance=ExtResource("6_h161u")]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 3.23819, 0.82791, 1.7142)
+
+[node name="Item6" parent="Items" instance=ExtResource("6_h161u")]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 7.30051, 0.82791, -0.394071)
+
+[node name="Item3" parent="Items" instance=ExtResource("6_h161u")]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 6.36268, 0.82791, 7.24007)
+
+[node name="Item4" parent="Items" instance=ExtResource("6_h161u")]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, -4.82853, 0.82791, 1.7142)
+
+[node name="Item5" parent="Items" instance=ExtResource("6_h161u")]
+transform = Transform3D(1.27937, 0, 0, 0, 1.27937, 0, 0, 0, 1.27937, 1.82223, 1.01468, -3.82528)
+
+[node name="Area Trigger" parent="." instance=ExtResource("3_rili7")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.109985, 1.23135, 17.5253)
+sceneName = "Win Screen"
+
+[node name="Player" parent="." instance=ExtResource("4_vdhy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.627442, 0.834829, 13.3819)
+
+[node name="Area Trigger2" parent="." instance=ExtResource("5_er6t4")]
+transform = Transform3D(8.75694, 0, 0, 0, 0.986549, 0, 0, 0, 15.7641, -0.212891, -2.72707, 6.5048)
+
+[node name="World 2" parent="." instance=ExtResource("5_i2qxl")]
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.01996, 0)
+modulate = Color(0, 1, 1, 1)
+text = "GET FREE DIAMONDS!!!"
+font_size = 200
+
+[node name="Hud" parent="." instance=ExtResource("7_wsq5c")]

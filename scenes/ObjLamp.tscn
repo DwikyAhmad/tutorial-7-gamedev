@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://enjgr1e0hi50"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_grhoy"]
+albedo_color = Color(1, 1, 0, 1)
+
+[node name="ObjLamp" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0851362, 2.76693, -0.0376186)
+
+[node name="lamp" type="CSGCombiner3D" parent="."]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0550184, -2.6754, 0)
+radius = 0.645
+height = 0.388
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0322882, -1.59235, -0.0112801)
+radius = 0.255
+height = 1.761
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="lamp"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.758155, 0)
+polygon = PackedVector2Array(0, 0, 0, 1, 0.675753, 1.01041, 1, 0)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+material = SubResource("StandardMaterial3D_grhoy")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.534241, 0)
+light_energy = 5.0
+omni_range = 9.31337
